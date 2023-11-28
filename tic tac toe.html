@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color:red;
+            margin-bottom:-5px ;
+        }
+        .ui{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .row{
+            display:flex;
+        }
+        .cell:active{
+            outline: none;
+            width:80px;
+            height:80px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            text-align: center;
+            cursor:pointer;
+        }
+        #b1{
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+        #b2{
+            border-bottom: 1px solid gray;
+            border-right: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+        #b3{
+            border-bottom: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+        #b4{
+            border-top: 1px solid gray;
+            border-right: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+        #b5{
+            border:1px solid gray;
+        }
+        #b6{
+            border-top: 1px solid gray;
+            border-right: 1px solid gray;
+            border-left: 1px solid gray; 
+        }
+        #b7{
+            border-top: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+        #b8{
+            border-top: 1px solid gray;
+            border-right: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+        #b9{
+            border-top: 1px solid gray;
+            border-left: 1px solid gray;
+        }
+        #but{
+            box-sizing: border-box;
+            width: 95px;
+            height:40px;
+            border: 1px solid dodgerblue;
+            margin-left: auto;
+            border-radius: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: whitesmoke;
+            color:dodgerblue;
+            font-size: 20px;
+            cursor:pointer;
+        }
+        #print{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color:dodgerblue;
+            font-size:20px;
+        }
+        #main{
+            text-align: center;
+        }
+        #ins{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE</h1>
+        <div class="ui">
+            <div class="row">
+                <input type="text" id="b1"
+                class="cell" onclick="myfunc_3(); myfunc();"
+                readonly>
+                <input type="text" id="b2"
+                class="cell" onclick="myfunc_4(); myfunc();"
+                readonly>  
+                <input type="text" id="b3"
+                class="cell" onclick="myfunc_5(); myfunc();"
+                readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b4"
+                class="cell" onclick="myfunc_6(); myfunc();"
+                readonly>
+                <input type="text" id="b5"
+                class="cell" onclick="myfunc_7(); myfunc();"
+                readonly>  
+                <input type="text" id="b6"
+                class="cell" onclick="myfunc_8(); myfunc();"
+                readonly>
+            </div>
+            <div class="row">
+                <input type="text" id="b7"
+                class="cell" onclick="myfunc_6(); myfunc();"
+                readonly>
+                <input type="text" id="b8"
+                class="cell" onclick="myfunc_7(); myfunc();"
+                readonly>  
+                <input type="text" id="b9"
+                class="cell" onclick="myfunc_8(); myfunc();"
+                readonly>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
